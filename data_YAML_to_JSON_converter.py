@@ -24,8 +24,8 @@ def write_json(data, file_path):
     json.dump(data, my_file, ensure_ascii=False, indent=4) # ensure_ascii=False сохраняет кириллицу, indent добавляет отступы по 4 пробела
 
 if __name__ == "__main__":
-  yaml_file = "/content/data_lab.yaml"  # Путь к YAML-файлу
-  json_file = "/content/data_converted_lab.json"  # Путь для сохранения JSON-файла
+  yaml_file = "data_lab.yaml"  # Путь к YAML-файлу
+  json_file = "data_converted_lab.json"  # Путь для сохранения JSON-файла
   data = read_yaml(yaml_file)
   write_json(data, json_file)
 
